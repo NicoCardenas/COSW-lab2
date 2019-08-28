@@ -1,4 +1,7 @@
-class TodoApp extends React.Component {
+import React from 'react';
+import { TodoList } from './TodoList';
+
+export class TodoApp extends React.Component {
     constructor(props) {
       super(props);
       this.state = { items: [], text: '' };
@@ -15,6 +18,7 @@ class TodoApp extends React.Component {
             <label htmlFor="new-todo">
               What needs to be done?
             </label>
+            <br></br>
             <input
               id="new-todo"
               onChange={this.handleChange}
